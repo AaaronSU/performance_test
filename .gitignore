@@ -1,0 +1,8 @@
+dgemm/benchmark*
+dgemm/img
+dgemm/gen*
+dgemm/stat_gen
+
+dotprod/benchmark*
+
+reduc/benchmark*
