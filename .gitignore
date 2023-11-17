@@ -3,6 +3,6 @@ dgemm/img
 dgemm/gen*
 dgemm/stat_gen
 
-dotprod/benchmark*
+dotprod/benchmark/
 
 reduc/benchmark*
