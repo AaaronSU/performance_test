@@ -1,0 +1,30 @@
+set terminal pngcairo size 1920, 1024 enhanced font "Helvetica,22"
+
+set key right top Left reverse width 0 box 3
+set xlabel "Compilateur" offset 48, 1.5
+set ylabel "MiB/s" offset 10, 13 rotate by 0
+set mytics 5
+set grid
+set boxwidth 0.9
+
+
+set style data histograms
+set style fill solid 1.00 border 30
+set style histogram clustered gap 1 title offset character 0, 0, 0
+set style data histograms
+
+set yrange [0:190000]
+set xrange [*:*]  # Laisser l'axe x ajuster automatiquement
+set ytics nomirror
+set bmargin 5  # Ajuster la marge inférieure
+set lmargin 15  # Ajuster la marge gauche
+set rmargin 10  # Ajuster la marge droite
+set tmargin 8  # Ajuster la marge supérieure
+
+# set title "try"
+
+
+# set output "img/histogram_o1_without_cblas.png"
+# plot 'stat_gen/n120/O1.dat' using 5:xtic(1) ti col, '' u 2 ti col, '' u 3 ti col, '' u 4 ti col
+
+# gnuplot -e "load 'gen_img.gb'; set title 'try'; set output 'img/histogram_o1_without_cblas.png'; plot 'stat_gen/n120/O1.dat' using 5:xtic(1) ti col, '' u 2 ti col, '' u 3 ti col, '' u 4 ti col"
