@@ -1,8 +1,8 @@
-set terminal pngcairo size 1920, 1024 enhanced font "Helvetica,20"
+set terminal pngcairo size 1920, 1024 enhanced font "Helvetica,22"
 
 set key right top Left reverse width 0 box 3
-set xlabel "Compilateur" offset 53, 1.5
-set ylabel "MiB/s" offset 10, 14 rotate by 0
+set xlabel "Compilateur" offset 48, 1.5
+set ylabel "MiB/s" offset 10, 13 rotate by 0
 set mytics 5
 set grid
 set boxwidth 0.9

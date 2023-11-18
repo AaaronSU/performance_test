@@ -44,7 +44,7 @@ check_file() {
     fi
 
     # CBLAS
-    # if !(verify_line $file_name "CBLAS" $pourcentage); then
+    # if !(verify_line $file_name "CBLAS" "25"); then
     #     return 1
     # fi
 
@@ -78,6 +78,12 @@ apply_fonction "gcc" "O1"
 apply_fonction "clang" "O1"
 apply_fonction "icc" "O1"
 apply_fonction "icx" "O1"
+
+# Version O2
+apply_fonction "gcc" "O2"
+apply_fonction "clang" "O2"
+apply_fonction "icc" "O2"
+apply_fonction "icx" "O2"
 
 # Version O3
 apply_fonction "gcc" "O3"

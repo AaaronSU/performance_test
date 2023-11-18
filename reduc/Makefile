@@ -28,5 +28,20 @@ endif
 endif
 endif
 
+gen: gen_benchmark gen_stat gen_img
+
+gen_benchmark:
+	taskset -c 1 ./script/gen_benchmark.sh 2048 100 4
+	taskset -c 1 ./script/gen_benchmark.sh 4096 100 4
+	taskset -c 1 ./script/gen_benchmark.sh 81920 100 4
+	taskset -c 1 ./script/gen_benchmark.sh 589824 100 4
+
+
+gen_stat:
+	./script/gen_stat.sh
+
+gen_img:
+	./script/gen_img.sh
+
 clean:
 	@rm -Rf reduc

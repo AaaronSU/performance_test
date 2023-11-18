@@ -1,8 +1,6 @@
-dgemm/benchmark*
-dgemm/img
-dgemm/gen*
-dgemm/stat_gen
+*/benchmark*
+*/img
+*/script
+*/stat_gen
 
-dotprod/benchmark/
-
-reduc/benchmark*
+gen*
